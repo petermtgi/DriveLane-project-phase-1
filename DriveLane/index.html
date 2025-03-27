@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveLane - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Sticky Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(126, 106, 63, 0.842);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 80px 20px;
+            min-height: 100vh;
+        }
+
+        body {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">DriveLane</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#auctions">Auctions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1>DriveLane</h1>
+        <p>Redefined nostalgia again!</p>
+        <a href="#auctions" class="btn">Explore Auctions</a>
+    </header>
+
+    <section id="about">
+        <h2>What we're about</h2>
+        <p>DriveLane is a premier auction platform dedicated to modern classic cars, offering enthusiasts a seamless way to find and own their dream vehicles. With a deep passion for automotive excellence, the company curates a selection of rare and iconic cars, ensuring each auction is a thrilling experience. DriveLane is built on the belief that every car tells a story, connecting customers with vehicles that bring joy and nostalgia. Their commitment to quality, transparency, and customer satisfaction makes them a trusted name in the industry. Whether you're a seasoned collector or a first-time buyer, DriveLane makes the journey effortless. By blending passion with expertise, DriveLane turns dreams into reality, one auction at a time.</p>
+    </section>
+
+    <section id="auctions" class="featured">
+        <h2>Featured Cars</h2>
+        <div class="car-container">
+            <div class="car-card">
+                <span class="price-tag">$120,000</span>
+                <img src="images/2022-Austin-Healey-by-Caton-008-1600.jpg" alt="Supercar 1">
+                <h2>2022 Austin Healey</h2>
+                <p>2.9-liter inline 6-cylinder engine </p>
+                <button class="price-button">View Price</button>
+            </div>
+            <div class="car-card">
+                <span class="price-tag">$80,000</span>
+                <img src="images/2017-Caterham-Seven-Sprint-005-1600.jpg" alt="Supercar 2">
+                <h2>2017 Caterham Seven Sprint</h2>
+                <p>660cc three-cylinder turbocharged Suzuki engine producing 80 bhp</p>
+                <button class="price-button">View Price</button>
+            </div>
+            <div class="car-card">
+                <span class="price-tag">$150,000</span>
+                <img src="images/2023-Morgan-Super-3-010-1600.jpg" alt="Supercar 3">
+                <h2>2023 Morgan Super 3</h2>
+                <p>1.5-liter, naturally aspirated, in-line three-cylinder Ford engine</p>
+                <button class="price-button">View Price</button>
+            </div>
+            <div class="car-card">
+                <span class="price-tag">$500,000</span>
+                <img src="images/2018-Aston-Martin-DB4-GT-Continuation-002-1536 (1).jpg" alt="Supercar 4">
+                <h2>2018 Aston Martin DB4 GT Continuation</h2>
+                <p>4.2-liter inline-6 engine with 340 bhp</p>
+                <button class="price-button">View Price</button>
+            </div>
+            <div class="car-card">
+                <span class="price-tag">$30M</span>
+                <img src="images/1936-Bugatti-Type-57SC-Atlantic-Coupe-001-1440.jpg" alt="Supercar 5">
+                <h2>1936 Bugatti Type 57SC Atlantic Coupe</h2>
+                <p>3.3-liter inline-8 engine with a supercharger</p>
+                <button class="price-button">View Price</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@drivelane.com</p>
+        <p>Phone: +254 712 345 678</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DriveLane. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
