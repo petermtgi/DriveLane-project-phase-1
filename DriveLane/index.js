@@ -3,10 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const addCarButton = document.getElementById("addCarButton");
 
     if (!carContainer) {
-        console.error("Error: .car-container element not found.");
+        console.error("Error: .car-container not found.");
         return;
     }
 
+    console.log("Car Container found:", carContainer);
+    console.log("Add Car Button found:", addCarButton);
+
+    // Fetch cars from cars.json
     fetch("cars.json")
         .then(response => {
             if (!response.ok) {
@@ -34,8 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error("Error loading cars:", error));
 
+    // Event listener for adding a new car
     if (addCarButton) {
         addCarButton.addEventListener("click", () => {
+            console.log("Add Car button clicked!");
+
             const carName = document.getElementById("carName").value.trim();
             const carImage = document.getElementById("carImage").value.trim();
             const carPrice = document.getElementById("carPrice").value.trim();
@@ -44,6 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert("Please fill in all fields.");
                 return;
             }
+
+            console.log(`Adding Car: ${carName}, Image: ${carImage}, Price: ${carPrice}`);
 
             const carCard = document.createElement("div");
             carCard.classList.add("car-card");
@@ -58,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             carContainer.appendChild(carCard);
 
+            // Clear input fields
             document.getElementById("carName").value = "";
             document.getElementById("carImage").value = "";
             document.getElementById("carPrice").value = "";
@@ -66,3 +76,4 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Error: Add Car button not found.");
     }
 });
+
