@@ -6,54 +6,7 @@
     <title>DriveLane - Home</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Sticky Navbar */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(126, 106, 63, 0.842);
-            color: white;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        section {
-            padding: 80px 20px;
-            min-height: 100vh;
-        }
-
-        body {
-            padding-top: 60px;
-        }
+   
     </style>
 </head>
 <body>
@@ -76,8 +29,17 @@
 
     <section id="about">
         <h2>What we're about</h2>
-        <p>DriveLane is a premier auction platform dedicated to modern classic cars, offering enthusiasts a seamless way to find and own their dream vehicles. With a deep passion for automotive excellence, the company curates a selection of rare and iconic cars, ensuring each auction is a thrilling experience. DriveLane is built on the belief that every car tells a story, connecting customers with vehicles that bring joy and nostalgia. Their commitment to quality, transparency, and customer satisfaction makes them a trusted name in the industry. Whether you're a seasoned collector or a first-time buyer, DriveLane makes the journey effortless. By blending passion with expertise, DriveLane turns dreams into reality, one auction at a time.</p>
+        <p>DriveLane is a premier auction platform dedicated to modern classic cars, offering enthusiasts a seamless way to find and own their dream vehicles. With a deep passion for automotive excellence, the company curates a selection of rare and iconic cars, ensuring each auction is a thrilling experience. DriveLane is built on the belief that every car tells a story, connecting customers with vehicles that bring joy and nostalgia.</p>
     </section>
+
+    <div class="form-container">
+        <h2>Add a Car</h2>
+        <input type="text" id="carName" placeholder="Car Name">
+        <input type="text" id="carImage" placeholder="Image URL">
+        <input type="text" id="carPrice" placeholder="Price">
+        <button id="addCarButton">Add Car</button>
+    </div>
+    
 
     <section id="auctions" class="featured">
         <h2>Featured Cars</h2>
@@ -86,7 +48,7 @@
                 <span class="price-tag">$120,000</span>
                 <img src="images/2022-Austin-Healey-by-Caton-008-1600.jpg" alt="Supercar 1">
                 <h2>2022 Austin Healey</h2>
-                <p>2.9-liter inline 6-cylinder engine </p>
+                <p>2.9-liter inline 6-cylinder engine</p>
                 <button class="price-button">View Price</button>
             </div>
             <div class="car-card">
@@ -119,7 +81,6 @@
             </div>
         </div>
     </section>
-    
 
     <section id="contact">
         <h2>Contact Us</h2>
