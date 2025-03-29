@@ -9,9 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("Car Container found:", carContainer);
     console.log("Add Car Button found:", addCarButton);
-
-    // Fetch cars from cars.json
-    fetch("cars.json")
+    
+    fetchhttp://localhost:3000/
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Failed to load cars.json: ${response.statusText}`);
